@@ -1,12 +1,12 @@
 from gcs_tool import gcs_upload, gcs_download
 
 local_path = './testfolder/'
-bucket_name = 'queue_size'
+bucket_name = 'test_bucket'
 destination_path = ''
 # source_path = 'path/to/source'
 local_destination_path = '/path/to/local/destination'
 
-service_account_json = 'env/e2e-testing-383807-b0aee978a1fc.json'
+service_account_json = 'env/sa.json'
 
 gcs_upload(local_path, bucket_name, destination_path, service_account_json)
 
